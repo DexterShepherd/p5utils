@@ -1,4 +1,4 @@
-class ShiffmanParticle {
+module.exports = class ShiffmanParticle {
   constructor(renderer, loc, renderer, params) {
     this.loc = loc;
     this.acc = params.acc || this.renderer.createVector(0, 0);
@@ -50,7 +50,3 @@ class ShiffmanParticle {
     this.renderer.ellipse(this.loc.x, this.loc.y)
   }
 } 
-
-module.exports = {
-  ShiffmanParticle: ShiffmanParticle
-}
